@@ -1,0 +1,45 @@
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org.2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">
+
+	<servlet>
+		<servlet-name>Phone Book</servlet-name>
+		<servlet-class>com.example.web.Add</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Phone Book</servlet-name>
+		<url-pattern>/AddContact.do</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>View Contact</servlet-name>
+		<servlet-class>com.example.web.View</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>View Contact</servlet-name>
+		<url-pattern>/ViewContact.do</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Update Contact</servlet-name>
+		<servlet-class>com.example.web.Update</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Update Contact</servlet-name>
+		<url-pattern>/UpdateContact.do</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Remove Contact</servlet-name>
+		<servlet-class>com.example.web.Remove</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Remove Contact</servlet-name>
+		<url-pattern>/RemoveContact.do</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Search Contact</servlet-name>
+		<servlet-class>com.example.web.Search</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Search Contact</servlet-name>
+		<url-pattern>/SearchContact.do</url-pattern>
+	</servlet-mapping>
+	
+
+</web-app>
